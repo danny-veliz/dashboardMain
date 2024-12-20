@@ -1,0 +1,82 @@
+/* Contenedor raíz que ocupa toda la pantalla */
+#root, .app-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  min-height: 100vh; /* Toda la altura de la pantalla */
+  width: 100%; /* Todo el ancho de la pantalla */
+  margin: 0; /* Sin márgenes */
+  padding: 0; /* Sin padding extra */
+  box-sizing: border-box; /* Incluye padding y bordes en el tamaño total */
+  transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+/* Estilos para el modo día */
+.day-mode {
+  background-color: #e3f2fd; /* Fondo claro */
+  color: #000; /* Texto oscuro */
+}
+
+/* Estilos para el modo noche */
+.night-mode {
+  background-color: #121212; /* Fondo oscuro */
+  color: #fff; /* Texto claro */
+}
+
+/* Botón de actualización */
+.update-button {
+  margin: 20px auto; /* Centrado con margen */
+  font-size: 16px;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.update-button:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
+
+/* Elementos de tabla (si los usas) */
+.table-container {
+  margin-top: 20px;
+  border-radius: 8px;
+  overflow: hidden;
+  background-color: #fff;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  width: 80%; /* Anchura ajustable */
+}
+
+.table-container h5 {
+  margin: 10px;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 10px;
+  text-align: left;
+  border: 1px solid #ddd;
+}
+
+th {
+  background-color: #f2f2f2;
+}
+
+tr:hover {
+  background-color: #f9f9f9;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
